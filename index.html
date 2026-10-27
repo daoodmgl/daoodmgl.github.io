@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081426">
+  <meta name="description" content="Daood Mughal's personal portfolio. Projects in engineering, electronics, software, and design. Coming soon.">
+  <title>Daood Mughal — Portfolio Coming Soon</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #081426;
+      --surface: #0e213a;
+      --text: #edf4ff;
+      --muted: #adbed4;
+      --line: rgba(166, 199, 239, .18);
+      --blue: #8bbefc;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      background:
+        radial-gradient(ellipse 70% 60% at 88% 18%, rgba(34, 87, 145, .22), transparent 70%),
+        linear-gradient(180deg, #0a192e 0%, var(--background) 100%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+    a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
+
+    .shell { width: min(1080px, calc(100% - 48px)); margin: 0 auto; }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand { font-size: 15px; font-weight: 650; letter-spacing: .03em; }
+    .header-note { color: var(--muted); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 90px 0 110px;
+    }
+
+    .content { max-width: 760px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 650;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 0 5px rgba(139,190,252,.1);
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 82px);
+      font-weight: 650;
+      line-height: 1.08;
+      letter-spacing: -.052em;
+      margin: 27px 0 26px;
+      max-width: 850px;
+    }
+
+    h1 span { color: var(--blue); }
+
+    .intro {
+      color: var(--muted);
+      font-size: clamp(16px, 2vw, 19px);
+      line-height: 1.8;
+      max-width: 620px;
+      margin: 0;
+    }
+
+    .details {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 42px;
+    }
+
+    .social {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 21px;
+      border: 1px solid rgba(139,190,252,.42);
+      border-radius: 9px;
+      text-decoration: none;
+      background: rgba(71,126,197,.13);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 14px;
+      transition: background .15s ease, border-color .15s ease;
+    }
+
+    .social:hover { background: rgba(71,126,197,.26); border-color: var(--blue); }
+    .detail-note { color: var(--muted); font-size: 13px; }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 26px 0 34px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .shell { width: min(100% - 36px, 1080px); }
+      header { padding: 24px 0; }
+      .header-note { display: none; }
+      main { padding: 72px 0 90px; }
+      h1 { margin-top: 22px; }
+      footer { padding: 21px 0 27px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell">
+    <div class="brand">Daood Mughal</div>
+    <div class="header-note">Personal portfolio / 2026</div>
+  </header>
+
+  <main class="shell">
+    <div class="content">
+      <div class="eyebrow">Website in progress</div>
+      <h1>A little more<br><span>to come.</span></h1>
+      <p class="intro">
+        I'm Daood, a Mechanical Engineering student at Western University.
+        I'm putting together a space to share projects involving electronics,
+        software, and design. The full website will be here soon.
+      </p>
+      <div class="details">
+        <a class="social" href="https://www.linkedin.com/in/daoodmughal" target="_blank" rel="noopener noreferrer">
+          Connect on LinkedIn ↗
+        </a>
+        <span class="detail-note">Thanks for stopping by.</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="shell">
+    <span>Daood Mughal</span>
+    <span>Engineering · Electronics · Software</span>
+  </footer>
+</body>
+</html>
